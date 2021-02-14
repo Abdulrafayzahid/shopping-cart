@@ -28,11 +28,23 @@ class App extends React.Component {
   };
 
   sortProducts = (event) => {
-    console.log(event.target.value);
-    this.setState({ size: event.target.value });
+    const sort = event.target.value
+    this.setState({
+      sort: event.target.value,
+      products: this.state.products.sort((a, b) =>
+        sort === "lowest" ?
+          a.price > b.price ?
+            1 : -1
+          : sort === "highest" ?
+            a.price < b.price ?
+              1 : -1 :
+            a._id > b._id ? 1 : -1
+      )
+    });
   };
-  render() {
-    console.log(this.state.products);
+  
+  render() {    
+
     return (
       <div className="grid-container">
         <header>

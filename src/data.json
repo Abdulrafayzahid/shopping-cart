@@ -6,14 +6,14 @@
             "title":"Midi sundress with shirring details",
             "description":"This is for all latest trend",
             "availableSizes":["X","L","XL","XXL"],
-            "price":29.9
+            "price":22.9
         },
         {
             "_id":"dress2",
             "image":"/images/p4.jpg",
             "title":"Midi sundress with shirring details",
             "description":"This is for all latest trend",
-            "availableSizes":["X"],
+            "availableSizes":["L"],
             "price":25.9
         },
         {
