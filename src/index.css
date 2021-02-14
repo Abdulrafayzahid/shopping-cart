@@ -194,3 +194,20 @@ footer{
 .total > div, .total > button {
   flex: 1;
 }
+
+.form-container{
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.form-container li {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+}
+
+input{
+  padding: 1rem;
+  border: .1rem #c0c0c0 solid;
+}
